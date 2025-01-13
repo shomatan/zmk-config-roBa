@@ -102,7 +102,7 @@
 &trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                         &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(C_AC_ZOOM_IN) LC(C_AC_ZOOM_OUT)>;
+            sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
         };
 
         MOUSE {
