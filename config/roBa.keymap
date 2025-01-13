@@ -96,10 +96,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &none   &none   &none   &trans                      &trans  &trans          &kp UP_ARROW    &trans           &trans
-&kp HOME        &none   &none   &none   &none   &trans      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp LEFT_SHIFT  &none   &trans  &none   &trans  &trans      &trans  &trans  &trans          &trans          &trans           &trans
-&trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                   &trans
+&kp ESCAPE      &none   &none   &none   &trans                      &trans          &trans          &none         &trans           &trans
+&kp HOME        &none   &none   &none   &none   &trans      &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&kp LEFT_SHIFT  &none   &trans  &none   &trans  &trans      &trans  &trans          &trans          &trans        &trans           &trans
+&trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(C_AC_ZOOM_IN) LC(C_AC_ZOOM_OUT)>;
