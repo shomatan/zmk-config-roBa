@@ -73,7 +73,7 @@
 &kp LEFT_COMMAND  &none  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 ESCAPE  &mt LEFT_SHIFT TAB      &lt 2 SPACE  &lt 1 RIGHT_COMMAND                             &lt_to_layer_0 6 ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp RC(C_AC_SCROLL_UP) C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         NUM {
@@ -104,7 +104,7 @@
 &trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                         &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
+            sensor-bindings = <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
         };
 
         MOUSE {
