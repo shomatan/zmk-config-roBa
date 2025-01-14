@@ -7,7 +7,6 @@
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
-
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
 #define SCRL_UP MOVE_Y(ZMK_MOUSE_DEFAULT_SCRL_VAL)
 #define SCRL_DOWN MOVE_Y(-ZMK_MOUSE_DEFAULT_SCRL_VAL)
@@ -72,6 +71,7 @@
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
             // 追加: スクロールのタップ時間を設定 (20ms)
+
             tap-ms = <20>;
         };
     };
@@ -82,9 +82,9 @@
         default_layer {
             bindings = <
 &kp Q             &kp W  &kp E         &kp R             &kp T                                              &kp Y                &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S  &lt 3 D       &kp F             &kp G         &none                   &kp MINUS    &kp H                &kp J  &lt 3 K    &kp L    &kp ENTER
-&mt LEFT_SHIFT Z  &kp X  &kp C         &kp V             &kp B         &kp LC(UP_ARROW)        &none        &kp N                &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
-&kp LEFT_COMMAND  &none  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 ESCAPE  &mt LEFT_SHIFT TAB      &lt 2 SPACE  &lt 1 RIGHT_COMMAND                             &lt_to_layer_0 6 ESCAPE
+&kp A             &kp S  &lt 3 D       &kp F             &kp G      &none                      &kp MINUS    &kp H                &kp J  &lt 3 K    &kp L    &kp ENTER
+&mt LEFT_SHIFT Z  &kp X  &kp C         &kp V             &kp B      &kp LC(UP_ARROW)           &none        &kp N                &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
+&kp LEFT_COMMAND  &none  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 TAB  &mt LEFT_SHIFT ESCAPE      &lt 2 SPACE  &lt 1 RIGHT_COMMAND                             &lt_to_layer_0 6 ESCAPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
