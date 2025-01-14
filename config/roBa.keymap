@@ -70,10 +70,10 @@
 &kp Q             &kp W  &kp E         &kp R             &kp T                                              &kp Y                &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &kp S  &lt 3 D       &kp F             &kp G         &none                   &kp MINUS    &kp H                &kp J  &lt 3 K    &kp L    &kp ENTER
 &mt LEFT_SHIFT Z  &kp X  &kp C         &kp V             &kp B         &kp LC(UP_ARROW)        &none        &kp N                &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
-&kp LEFT_SHIFT    &none  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 ESCAPE  &mt LEFT_SHIFT TAB      &lt 2 SPACE  &lt 1 RIGHT_COMMAND                             &lt_to_layer_0 6 ESCAPE
+&kp LEFT_COMMAND  &none  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 ESCAPE  &mt LEFT_SHIFT TAB      &lt 2 SPACE  &lt 1 RIGHT_COMMAND                             &lt_to_layer_0 6 ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp RC(K_SCROLL_UP) K_SCROLL_DOWN>;
         };
 
         NUM {
@@ -83,6 +83,8 @@
 &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS   &none       &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPERSAND
 &trans        &trans        &kp NUMBER_0  &trans        &trans     &trans      &trans  &trans                                                                            &none
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         SYMBOL {
@@ -130,6 +132,8 @@
 &trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR_ALL
 &trans  &trans            &trans            &trans            &trans  &trans      &trans       &trans                                                  &none
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOLUME_DOWN>;
         };
     };
 };
