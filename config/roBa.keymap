@@ -91,10 +91,10 @@
 
         NUM {
             bindings = <
-&kp SLASH     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL                            &kp EXCLAMATION   &kp AT_SIGN        &kp HASH              &kp DOLLAR             &kp PERCENT
-&kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &none       &kp QUESTION  &kp SEMICOLON     &kp COLON          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET
-&none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS   &none       &kp PIPE      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPERSAND
-&trans        &trans        &kp NUMBER_0  &trans        &trans     &trans      &trans        &trans                                                                            &none
+&kp SLASH     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL                            &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR             &kp PERCENT
+&kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &none       &kp QUESTION  &kp SEMICOLON     &kp COLON          &kp UNDERSCORE  &kp RIGHT_PARENTHESIS  &kp CARET
+&none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS   &none       &kp PIPE      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE        &kp AMPERSAND
+&trans        &trans        &kp NUMBER_0  &trans        &trans     &trans      &trans        &trans                                                                      &none
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;
@@ -102,10 +102,10 @@
 
         SYMBOL {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET
-&kp GRAVE        &kp SLASH          &none     &kp TILDE   &trans       &trans      &trans  &kp UNDERSCORE  &kp QUESTION  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
-&trans           &trans             &trans    &trans      &trans       &trans      &trans  &trans          &trans        &kp LESS_THAN         &kp GREATER_THAN       &trans
-&trans           &trans             &trans    &trans      &trans       &trans      &trans  &trans                                                                     &trans
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp AMPERSAND         &kp ASTERISK           &none           &none             &kp CARET
+&kp GRAVE        &kp SLASH          &none     &kp TILDE   &trans       &trans      &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp PIPE
+&trans           &trans             &trans    &trans      &trans       &trans      &trans  &trans                &trans                 &kp LESS_THAN   &kp GREATER_THAN  &trans
+&trans           &trans             &trans    &trans      &trans       &trans      &trans  &trans                                                                         &trans
             >;
         };
 
