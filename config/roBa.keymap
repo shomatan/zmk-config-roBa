@@ -6,7 +6,6 @@
 
 #define SCROLL 5
 #define MOUSE 7
-
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
 #define SCRL_UP MOVE_Y(ZMK_MOUSE_DEFAULT_SCRL_VAL)
 #define SCRL_DOWN MOVE_Y(-ZMK_MOUSE_DEFAULT_SCRL_VAL)
@@ -81,10 +80,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W  &kp E         &kp R         &kp T                                               &kp Y        &kp U  &lt 5 I    &kp O    &lt 6 P
-&kp A             &kp S  &lt 3 D       &lt 4 F       &kp G      &none                 &kp MINUS          &kp H        &kp J  &lt 3 K    &kp L    &kp ENTER
-&mt LEFT_SHIFT Z  &kp X  &kp C         &kp V         &kp B      &kp LC(UP_ARROW)      &kp SLASH          &kp N        &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
-&kp LEFT_SHIFT    &none  &kp LEFT_ALT  &lt 2 ESCAPE  &lt 1 TAB  &kp LEFT_COMMAND      &kp RIGHT_COMMAND  &lt 1 SPACE                             &mt LEFT_CONTROL ESCAPE
+&kp Q             &kp W  &kp E         &kp R         &kp T                                               &kp Y        &lt 3 U  &lt 5 I    &kp O    &lt 6 P
+&kp A             &kp S  &lt 3 D       &lt 4 F       &kp G      &none                 &kp MINUS          &kp H        &kp J    &kp K      &kp L    &kp ENTER
+&mt LEFT_SHIFT Z  &kp X  &kp C         &kp V         &kp B      &kp LC(UP_ARROW)      &kp SLASH          &kp N        &kp M    &kp COMMA  &kp DOT  &kp BACKSPACE
+&kp LEFT_SHIFT    &none  &kp LEFT_ALT  &lt 2 ESCAPE  &lt 1 TAB  &kp LEFT_COMMAND      &kp RIGHT_COMMAND  &lt 1 SPACE                               &mt LEFT_CONTROL ESCAPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -110,12 +109,12 @@
             >;
         };
 
-        ARROW {
+        ARROW_FUNCTION {
             bindings = <
-&kp ESCAPE      &none   &none   &none   &trans                      &trans          &trans          &none         &trans           &trans
-&kp HOME        &none   &none   &none   &none   &trans      &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&kp LEFT_SHIFT  &none   &trans  &none   &trans  &trans      &trans  &trans          &trans          &trans        &trans           &trans
-&trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                         &trans
+&none   &kp F7  &kp F8  &kp F9  &kp F10                      &trans          &trans          &none         &trans           &trans
+&none   &kp F4  &kp F5  &kp F6  &kp F11  &trans      &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&none   &kp F1  &kp F2  &kp F3  &kp F12  &trans      &trans  &trans          &trans          &trans        &trans           &trans
+&trans  &trans  &trans  &trans  &trans   &trans      &trans  &trans                                                         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
