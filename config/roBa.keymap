@@ -80,10 +80,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W  &kp E         &kp R         &kp T                                               &kp Y        &lt 3 U  &lt 5 I    &kp O    &lt 6 P
-&kp A             &kp S  &lt 3 D       &lt 4 F       &kp G      &none                 &kp MINUS          &kp H        &kp J    &kp K      &kp L    &kp ENTER
-&mt LEFT_SHIFT Z  &kp X  &kp C         &kp V         &kp B      &kp LC(UP_ARROW)      &kp SLASH          &kp N        &kp M    &kp COMMA  &kp DOT  &kp BACKSPACE
-&kp LEFT_SHIFT    &none  &kp LEFT_ALT  &lt 1 ESCAPE  &lt 2 TAB  &kp LEFT_COMMAND      &kp RIGHT_COMMAND  &lt 1 SPACE                               &mt LEFT_CONTROL ESCAPE
+&kp Q             &kp W             &kp E         &kp R         &kp T                                               &kp Y        &lt 3 U  &lt 5 I    &kp O    &lt 6 P
+&kp A             &kp S             &lt 3 D       &lt 4 F       &kp G      &none                 &kp MINUS          &kp H        &kp J    &kp K      &kp L    &kp ENTER
+&mt LEFT_SHIFT Z  &kp X             &kp C         &kp V         &kp B      &kp LC(UP_ARROW)      &kp BACKSPACE      &kp N        &kp M    &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_SHIFT    &kp LEFT_CONTROL  &kp LEFT_ALT  &lt 1 ESCAPE  &lt 2 TAB  &kp LEFT_COMMAND      &kp RIGHT_COMMAND  &lt 1 SPACE                               &mt LEFT_CONTROL ESCAPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -102,8 +102,8 @@
 
         SYMBOL {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp AMPERSAND         &kp ASTERISK           &none           &none             &kp CARET
-&kp GRAVE        &kp SLASH          &none     &kp TILDE   &trans       &trans      &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp PIPE
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                      &none                 &none                  &none           &none             &kp CARET
+&kp GRAVE        &kp BACKSLASH      &none     &kp TILDE   &trans       &trans      &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp PIPE
 &trans           &trans             &trans    &trans      &trans       &trans      &trans  &trans                &trans                 &kp LESS_THAN   &kp GREATER_THAN  &trans
 &trans           &trans             &trans    &trans      &trans       &trans      &trans  &trans                                                                         &trans
             >;
