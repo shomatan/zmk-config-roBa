@@ -18,34 +18,7 @@
 &tog { toggle-mode = "flip"; };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
@@ -65,6 +38,15 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <300>;
+        };
+    };
+
+    macros {
+        KVM: KVM {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LA(M))>;
+            label = "KVM";
         };
     };
 
@@ -135,7 +117,7 @@
             bindings = <
 &kp LS(LC(LG(NUMBER_4)))  &kp LC(NUMBER_7)  &kp LC(NUMBER_8)  &kp LC(NUMBER_9)  &trans                              &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none
 &kp LS(LG(NUMBER_4))      &kp LC(NUMBER_4)  &kp LC(NUMBER_5)  &kp LC(NUMBER_6)  &trans  &trans      &bt BT_CLR      &none         &none         &none         &none         &none
-&trans                    &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &trans  &trans      &bt BT_CLR_ALL  &none         &none         &none         &trans        &none
+&KVM                      &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &trans  &trans      &bt BT_CLR_ALL  &none         &none         &none         &trans        &none
 &trans                    &trans            &kp LC(NUMBER_0)  &trans            &trans  &trans      &trans          &trans                                                  &none
             >;
 
