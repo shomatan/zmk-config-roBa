@@ -41,15 +41,6 @@
         };
     };
 
-    macros {
-        KVM: KVM {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LA(M))>;
-            label = "KVM";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
